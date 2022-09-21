@@ -2,7 +2,7 @@ using System;
 using Xunit;
 using transportcalculator;
 
-namespace TestProject1
+namespace TestProject1_xunit
 {
     public class UnitTest1
     {
