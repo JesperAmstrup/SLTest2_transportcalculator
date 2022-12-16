@@ -8,6 +8,11 @@ namespace transportcalculator
     {
         public static decimal CalculateTransportcost(int DistanceMeters, decimal WeightGrams)
         {
+            if (DistanceMeters <= 0 || WeightGrams <= 0)
+            {
+                throw new ArgumentOutOfRangeException("Numbers need to be more than 0");
+            }
+
             if (DistanceMeters < 5000)
             {
                 //Hvis afstanden er under 5 km og vægten er under 10 kg, så er transporten gratis

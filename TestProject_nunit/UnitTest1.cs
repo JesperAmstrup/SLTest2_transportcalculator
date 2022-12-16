@@ -8,6 +8,7 @@ namespace TestProject_nunit
         [SetUp]
         public void Setup()
         {
+            //NUnit have here ar
         }
 
         [TestCase(4999, 4000, 0)]
